@@ -31,7 +31,7 @@ torch.manual_seed(seed)
 torch.cuda.manual_seed(seed)
 torch.cuda.manual_seed_all(seed)
 
-df = pd.read_csv("new_data/xy full.csv", na_values=["None"], header=None, skiprows=1)
+df = pd.read_csv("data/dataset.csv", na_values=["None"], header=None, skiprows=1)
 df.columns = ["x", "y", "con", "flu", "levis"]
 df["levis"] = df["levis"].fillna("C").astype(str)
 df_train, df_test = train_test_split(df, test_size=0.1, random_state=seed)

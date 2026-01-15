@@ -33,13 +33,14 @@ def objective(trial):
     torch.cuda.manual_seed_all(seed)
 
     # Load and preprocess dataset
-    df = pd.read_csv("new_data/xy full.csv", na_values=["None"], header=None, skiprows=1)
+    df = pd.read_csv("data/dataset.csv", na_values=["None"], header=None, skiprows=1)
     df.columns = ["x", "y", "con", "flu", "levis"]
     df["levis"] = df["levis"].fillna("C").astype(str)
 
     # Split into training (90%) and independent test set (10%) NEVER USED HERE
-    df_train, _ = train_test_split(df, test_size=0.1, random_state=seed) 
-
+    df_train, df_test = train_test_split(df, test_size=0.1, random_state=seed) 
+    # this df_test should be saved for the testing phase after hyperparameter tuning
+    
     # Perform 5-fold cross-validation on training set
     kf = KFold(n_splits=5, shuffle=True, random_state=seed)
     val_losses = []
