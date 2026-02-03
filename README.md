@@ -16,7 +16,6 @@ The project implements a **multi-encoder Graph Isomorphism Network (GIN)** to pr
   - Bayesian optimisation of architecture and training hyperparameters with Optuna.
   - Final model retrained with best hyperparameters and evaluated on a held‑out test set.
 
-Reported performance in the paper: \(R^2 = 0.92\) (MAE = 0.03) for \(x\) and \(R^2 = 0.84\) (MAE = 0.05) for \(y\).
 
 ---
 
