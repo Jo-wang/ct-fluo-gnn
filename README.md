@@ -1,6 +1,6 @@
-## Graph-based prediction of fluorescence chromaticity in CT complexes
+## Colour by Coordination: Predicting Organic Charge-Transfer Emission with Graph Neural Networks
 
-This repository contains the code used in the study **“Graph-based prediction of fluorescence emission chromaticity coordinates in charge-transfer complexes”** by Sujlesh Sharma, Zixin Wang, Yadan Luo, and Thanh Vinh Nguyen.
+This repository contains the code used in the study **“Colour by Coordination: Predicting Organic Charge-Transfer Emission with Graph Neural Networks”** by Sujlesh Sharma, Zixin Wang, Yadan Luo, and Thanh Vinh Nguyen.
 
 The project implements a **multi-encoder Graph Isomorphism Network (GIN)** to predict the CIE 1931 chromaticity coordinates \((x, y)\) of Lewis base–Lewis acid charge-transfer (CT) complexes from molecular structure and experimental conditions, trained on a small, imbalanced dataset.
 
@@ -155,6 +155,6 @@ To apply this model to new CT complexes:
 If you use this code or model in your work, please cite:
 
 > S. Sharma, Z. Wang, Y. Luo, T. V. Nguyen,  
-> **Graph-based prediction of fluorescence emission chromaticity coordinates in charge-transfer complexes**.  
+> **Colour by Coordination: Predicting Organic Charge-Transfer Emission with Graph Neural Networks**.  
 > Schools of Chemistry (UNSW) and Electrical Engineering and Computer Science (UQ).
 
